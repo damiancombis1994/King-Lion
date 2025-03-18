@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+		<title>King-Lion</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<meta name="author" content="Damian Combis">
+		<meta name="keywords" content="ropa, deportiva">
+		<meta name="description" content="Pagina de venta de ropa deportiva">
+
+		<!-- 
+							Fonts
+		-->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+	</head>
+
+<body>
+
+	<header class="caja-titulo-principal">
+		<a class="linkTituloPrincipal" href="index.html"><h1 class="contenido-titulo-principal">King Lion</h1></a>
+			
+			<div>
+					<svg xmlns="http://www.w3.org/2000/svg" id="carritoIcon" class="carritoIcon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                	<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="6" cy="19" r="2" />
+                    <circle cx="17" cy="19" r="2" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+                    <p id= "numCarrito"class="cantCarrito">
+                			0
+                    </p>
+            </div>            
+	</header>
+
+<nav>
+	<div id="boxEnlaces">
+		<ul class="enlaces">
+			<li class="enlace-directo">
+				<a class="enlace-directo-contenido" href="indexCategorias.html">Categoria</a>
+			</li>
+			<li class="enlace-directo">
+				<a class="enlace-directo-contenido" href="">Mujer</a>
+			</li>
+			<li class="enlace-directo">
+				<a class="enlace-directo-contenido" href="">Hombre</a>
+			</li>
+			<li class="enlace-directo">
+				<a id="subEnlaceClick" class="enlace-directo-contenido" href=" ">Marcas</a>
+				
+					<ul id="ulSubEnlaceClick"class="subEnlace">
+						  <!--  SEGUIR -->
+				    </ul>
+				
+				
+			</li>
+			<li class="enlace-directo">
+				<a class="enlace-directo-contenido" href="">Zapatillas</a>
+			</li>
+			<li class="enlace-directo">
+				<a class="enlace-directo-contenido" href="">Liquidación</a>
+			</li>
+
+	    </ul>
+    </div>
+		
+	</nav>
+		
+
+		<div class="caja-seis-cuotas">
+			<b class="after-seis-cuotas">6</b>
+		</div>
+
+		<main class="categoriasMain">
+
+		<div id="cajaProducto" class="boxShopDom">
+			
+		</div>
+			
+
+		</main>
+
+		<div class="boxAside">
+
+				<div class="gridAside"> 
+
+					<a class="linkHomeAside" href="index.html">Home</a>
+
+					<select class="opAside" >
+  					<option selected>Mas relevantes</option>
+  					<option value="1">Mas vendidos</option>
+  					<option value="2">lanzamiento</option>
+  					<option value="3">precio mas bajo</option>
+  					<option value="4">precio mas alto</option>
+					</select>
+
+					<div class="boxTipoProducto">
+					<h4 class="titulosAside">Tipo de productos</h4>
+					<p class="cateTipoProducto">Zapatillas   <button type="button" class="btn tipoProducto" id="zapatillasBTN"></button> </p>
+					<p class="cateTipoProducto">Remeras   <button type="button" class="btn tipoProducto" id="remerasBTN"></button> </p>
+					<p class="cateTipoProducto">Pantalones   <button type="button" class="btn tipoProducto"id="pantalonesBTN"></button> </p>
+					<p class="cateTipoProducto">Botines   <button type="button" class="btn tipoProducto" id="botinesBTN"></button> </p>
+
+					</div>
+
+					<div class="generoAside">
+						<h4 class="titulosAside">Genero</h4>
+					<p class="cateTipoProducto">Masculino   <button type="button" class="btn tipoProducto" id="masculinoBTN"></button> </p>
+					<p class="cateTipoProducto">Femenino   <button type="button" class="btn tipoProducto" id="femeninoBTN"></button> </p>
+					<p class="cateTipoProducto">Niños   <button type="button" class="btn tipoProducto" id="niñosBTN"></button> </p>
+					<p class="cateTipoProducto">Unisex  <button type="button" class="btn tipoProducto" id="unisexBTN"></button> </p>
+					</div>
+
+					<div class="categoriaAside">
+						<h4 class="titulosAside">Categoria</h4>
+					<p class="cateTipoProducto">Moda   <button type="button" class="btn tipoProducto" id="modaBTN"></button> </p>
+					<p class="cateTipoProducto">Futbol  <button type="button" class="btn tipoProducto" id="futbolBTN"></button> </p>
+					<p class="cateTipoProducto">Running  <button type="button" class="btn tipoProducto" id="runningBTN"></button> </p>
+					<p class="cateTipoProducto">Yoga  <button type="button" class="btn tipoProducto" id="yogaBTN"></button> </p>
+					</div>
+					<div class="categoriaAside">
+						
+					<p class="eliminarFiltros">Eliminar Filtros  <button type="button" class="btneliminarFiltros" id="eliminarBTN"></button> </p>
+					
+					</div>
+				</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="./Script/categorias.js"></script>
+</body>
+
+</html>
