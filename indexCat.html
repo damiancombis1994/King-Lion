@@ -29,60 +29,36 @@
 
 <body>
 
-	<header class="caja-titulo-principal">
-		<a class="linkTituloPrincipal" href="index.html"><h1 class="contenido-titulo-principal">King Lion</h1></a>
-			
-			<div>
-					<svg xmlns="http://www.w3.org/2000/svg" id="carritoIcon" class="carritoIcon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                	<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <circle cx="6" cy="19" r="2" />
-                    <circle cx="17" cy="19" r="2" />
-                    <path d="M17 17h-11v-14h-2" />
-                    <path d="M6 5l14 1l-1 7h-13" />
-                    </svg>
-                    <p id= "numCarrito"class="cantCarrito">
-                			0
-                    </p>
-            </div>            
-	</header>
-
-<nav>
-	<div id="boxEnlaces">
-		<ul class="enlaces">
-			<li class="enlace-directo">
-				<a class="enlace-directo-contenido" href="indexCategorias.html">Categoria</a>
-			</li>
-			<li class="enlace-directo">
-				<a class="enlace-directo-contenido" href="">Mujer</a>
-			</li>
-			<li class="enlace-directo">
-				<a class="enlace-directo-contenido" href="">Hombre</a>
-			</li>
-			<li class="enlace-directo">
-				<a id="subEnlaceClick" class="enlace-directo-contenido" href=" ">Marcas</a>
-				
-					<ul id="ulSubEnlaceClick"class="subEnlace">
-						  <!--  SEGUIR -->
-				    </ul>
-				
-				
-			</li>
-			<li class="enlace-directo">
-				<a class="enlace-directo-contenido" href="">Zapatillas</a>
-			</li>
-			<li class="enlace-directo">
-				<a class="enlace-directo-contenido" href="">Liquidación</a>
-			</li>
-
-	    </ul>
-    </div>
-		
-	</nav>
-		
-
-		<div class="caja-seis-cuotas">
-			<b class="after-seis-cuotas">6</b>
+	<header>
+		<div class="boxKingLion">
+		  <a href="index.html"><h1>King Lion</h1></a>
+		  <div>
+			  <svg xmlns="http://www.w3.org/2000/svg" id="carritoIcon" class="carritoIcon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+						<circle cx="6" cy="19" r="2" />
+						<circle cx="17" cy="19" r="2" />
+						<path d="M17 17h-11v-14h-2" />
+						<path d="M6 5l14 1l-1 7h-13" />
+						</svg>
+						<p id= "numCarrito"class="cantCarrito">
+						  0
+						</p>
+		  </div>         
 		</div>
+		<nav>
+		   <ul class="enlacesNav">
+			  <li><a href="indexCat.html">Categoria</a></li>
+			  <li><a href="#">Mujer</a></li>
+			  <li><a href="#">Hombre</a></li>
+			  <li><a href="#">Marcas</a></li>
+			  <li><a href="#">Zapatillas</a></li>
+			  <li><a href="#">Liquidación</a></li>
+			</ul>
+		</nav> 
+		<div class="cuotasHeader">
+		  <p>6</p>
+		</div>
+	  </header>
 
 		<main class="categoriasMain">
 
@@ -103,7 +79,7 @@
   					<option selected>Mas relevantes</option>
   					<option value="1">Mas vendidos</option>
   					<option value="2">lanzamiento</option>
-  					<option value="3">precio mas bajo</option>
+  					<option value="3">precio mas bajo</option>	
   					<option value="4">precio mas alto</option>
 					</select>
 
@@ -117,7 +93,7 @@
 					</div>
 
 					<div class="generoAside">
-						<h4 class="titulosAside">Genero</h4>
+					<h4 class="titulosAside">Genero</h4>
 					<p class="cateTipoProducto">Masculino   <button type="button" class="btn tipoProducto" id="masculinoBTN"></button> </p>
 					<p class="cateTipoProducto">Femenino   <button type="button" class="btn tipoProducto" id="femeninoBTN"></button> </p>
 					<p class="cateTipoProducto">Niños   <button type="button" class="btn tipoProducto" id="niñosBTN"></button> </p>

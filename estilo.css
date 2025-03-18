@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --color-principal: rgb(146, 43, 33);
   --color-verde-whats: rgb(30, 132, 73);
@@ -11,17 +17,24 @@
 .bodyPrincipal {
   min-height: 100vh;
 }
-
-.caja-titulo-principal {
+.boxKingLion{
   position: relative;
   display: block;
   background: var(--color-principal);
   height: 100px;
   text-align: center;
 }
-
-.contenido-titulo-principal {
+.boxKingLion a {
+  text-decoration: none;
+  color: black;
+}
+.boxKingLion a:hover {
+  color: white;
+}
+.boxKingLion a h1{
+  display: inline-block;
   position: absolute;
+  left: 0%;
   font-family: var(--tipografia-marca);
   text-align: center;
   width: 350px;
@@ -30,7 +43,6 @@
   margin-top: -1px;
   text-shadow: 0px 0px 3px #fff;
 }
-
 .carritoIcon {
   display: inline-block;
   position: absolute;
@@ -40,96 +52,75 @@
 .cantCarrito {
   display: inline-block;
   position: absolute;
-  top: -13px;
+  top: 29px;
   left: 95%;
-
   color: white;
   font-size: 40px;
 }
-
-.caja-seis-cuotas {
+nav{
+  margin: 5px 0px;
+}
+.enlacesNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px;
+}
+.enlacesNav li{
+  overflow: hidden;
+}
+.enlacesNav li:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+.enlacesNav li a{
+  font-family: var(--tipografia-principal);
+  text-decoration: none;
+  color: var(--color-principal);
+}
+.enlacesNav li a:hover{
+  color: #000;
+}
+.cuotasHeader {
   display: flex;
   justify-content: center;
   background: var(--color-principal);
   font-family: var(--tipografia-principal);
   margin: 10px 0px;
 }
-
-.after-seis-cuotas {
+.cuotasHeader p {
   padding: 5px;
   color: rgb(255, 255, 255);
   font-size: 25px;
   line-height: 1.5;
   font-family: var(--tipografia-principal);
 }
-.after-seis-cuotas::before {
+.cuotasHeader p::before {
   content: "Todos los dias, ";
   font-size: 18px;
   color: #000;
   font-family: var(--tipografia-principal);
 }
-
-.after-seis-cuotas::after {
+.cuotasHeader p::after {
   content: " cuotas fijas";
   color: rgb(245, 245, 245);
   font-size: 15px;
   font-family: var(--tipografia-principal);
 }
-
-/*******************************************************************************/
-.enlaces {
-  display: flex;
-  justify-content: space-around;
-  margin: 5px 0px;
-  padding: 2px;
-}
-
-.enlace-directo:hover {
-  transform: scale(1.3);
-  transition: 1s;
-}
-
-.enlace-directo {
-  overflow: hidden;
-}
-
-.enlace-directo-contenido:link {
-  color: var(--color-principal);
-}
-
-.enlace-directo-contenido:hover {
-  color: #000;
-}
-
-.enlace-directo-contenido {
-  font-family: var(--tipografia-principal);
-  text-decoration: none;
-  color: var(--color-principal);
-}
-
-.subEnlace {
-  display: none;
-}
-
-.caja-imagen-principal {
+.visual-imgCss{
   width: 100%;
   height: 500px;
-  background: var(--color-verde-whats);
   margin-bottom: 10px;
   background-image: url(https://www.palco23.com/files/2020/18_recursos/deporte%20outdoor/zapatilla-948.jpg);
   background-size: 100% 100%;
   background-origin: border-box;
   object-position: center center;
 }
-
-.promo-principal {
+.saleMain{
   display: flex;
   justify-content: space-around;
-  text-align: center;
   padding: 5px;
 }
-
-.promo-principal-items {
+.saleMain div{
   background-color: var(--color-principal);
   flex-basis: 310px;
   font-size: 20px;
@@ -138,189 +129,75 @@
   border: 2px solid #fff;
   box-shadow: 0px 0px 15px 0 var(--color-principal);
   text-align: center;
+  align-content: center;
 }
-
-.promo-principal-items-text {
-  padding: 10px;
-  margin-top: -1px;
-  color: #fff;
+.saleMain div a{
+  text-decoration: none; 
+  color: #fff; 
   font-family: var(--tipografia-principal);
-  text-decoration: none;
+  
 }
-
-.promo-principal-b {
+.saleMain div p{
   font-family: var(--tipografia-promocion);
   font-weight: 100;
   color: #fff;
-  padding: 10px;
-  margin-top: -1px;
 }
-
-.foto-propaganda_pri {
+.colMain{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   margin: 15px;
 }
-
-.foto-propaganda_pritamaño {
+.colMain div{ 
   flex-grow: 1;
-  width: 400px;
-  height: 250px;
-  margin-left: 10px;
+  height: 15.625rem;
+  margin: 0px 5px;
+}
+.colMain div img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-
-.nuestras-marcas {
+.boxCarru h4{
   font-family: var(--tipografia-principal);
   font-size: 30px;
   margin-left: 20px;
 }
-
-.items-nuestras_marcas {
+.boxCarru div{
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around; 
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
-
-.item-icono {
+.boxCarru div figure{
   padding: 20px;
 }
-
-.item-icono_foto {
+.boxCarru div figure img{
   width: 120px;
-  height: 120px;
+  height: 110px;
 }
-
-.foto-propaganda {
+.duoImg{
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
 }
-
-.foto-propaganda_tamaño {
+.duoImg figure{
   flex-grow: 1;
   width: 600px;
   height: 400px;
   margin-left: 10px;
 }
-
-.boxComentario{
-  display: flex;
-  height: 400px;
-  border: 2px solid black;
-}
-
-.titleComentario{
-  position: absolute;
-  height: 50px;
-  top:1750px;
-  left: 3vh;
-      padding: 1px;
-      font-size: 35px;
-      font-family: var(--tipografia-principal);
-    
-}
-
-.boxInputCreate{
-          position: relative;
-          width: 300px;
-          top: 70px;
-
-}
-
-.putComentarioEmail{
-                      position: relative;
-                      left: 100px;
-                      width: 300px;
-                      height: 20px;
-                      margin: 0px;
-                      text-align: center;
-                      padding: 5px;
-                    }
-.putComentarioCliente{
-  position: relative;
-  top: 20px;
-  left: 30px;
-  width: 450px;
-  height: 200px;
-  margin: 0px;
-  text-align: center;
-  padding: 5px;
-}
-.enviarComentario{
-  position: relative;
-  top: 40px;
-  left: 200px;
-  box-shadow:inset 0px 1px 0px 0px #caefab;
-	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
-	background-color:#77d42a;
-	border-radius:6px;
-	border:1px solid #268a16;
-	display:inline-block;
-	cursor:pointer;
-	color:#306108;
-	font-family:Courier New;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #aade7c;
-}
-.enviarComentario:hover {
-	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
-	background-color:#5cb811;
-}
-.referenciasComentario{
-  position: relative;
-  color: #fff;
-  left: 320px ;
-  font-family: var(--tipografia-principal);
-  font-weight: 20px;
-  font-size: 20px;
-  margin-top: .8rem;
-}
-
-.boxComentLive{
-  
-    margin: 0px;
-    display: inline-block;
-    position: relative;
-    bottom: 15px;
-    left: 70px;
-    width: 680px;
-    height: 330px;
-    background-color: #fff;
-    overflow-y: scroll;
-    
-}
-
-.caja1{
-  background-color: var(--color-principal);
-  border: 2px solid black;
-  flex-basis: 600px;
-  flex-grow: 1;
-}
-.caja2{
-  background-color: var(--color-principal);
-  flex-grow: 2;
-}
-.cajaComentarioLive{
-        border: 1px solid black;
-        text-align: center;
-        
-}
-.comentarioH6{
-  font-size: 20px;
-  font-family: var(--tipografia-principal);
-  background-color: #28d83c;
-  margin-top: 0px;
-}
-.postComentario{
-  font-size: 12px;
-  font-family: var(--tipografia-principal);
-  margin-top: -30px;
+.duoImg figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
+/*******************************************************************************/
 .galeria-productos {
   display: flex;
   justify-content: space-around;
@@ -388,7 +265,7 @@
   text-align: center;
   border: 4px inset rgba(181, 21, 0, 0.97);
   height: 850px;
-  weight: 300px;
+  width: 300px;
 }
 .gridAside {
   display: grid;
@@ -446,12 +323,12 @@
 
 .btneliminarFiltros {
   height: 15px;
-  weight: 5px;
+  width: 5px;
 }
 
 .btn {
   height: 15px;
-  weight: 5px;
+  width: 5px;
 }
 
 .generoAside {
@@ -549,7 +426,4 @@
   top: 1px;
 }
 
-.linkTituloPrincipal {
-  text-decoration: none;
-  color: black;
-}
+
