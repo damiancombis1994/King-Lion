@@ -198,22 +198,19 @@ nav{
 
 
 /*******************************************************************************/
-.galeria-productos {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  padding: 5px;
-  margin-top: 25px;
+.categoriasMain {
+  border: 1px solid black;
+  display: inline-block;
+  position: absolute;
+  width: 180vh;
+  left: 35vh;
 }
-.cajaProducto {
-  background-color: var(--color-principal);
-  flex-basis: 310px;
-  font-size: 20px;
-  border: 2px solid #000;
-  height: 400px;
-  border: 2px solid #fff;
-  box-shadow: 0px 0px 15px 0 var(--color-principal);
-  text-align: center;
+.boxShopDom {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-template-rows: repeat(auto-fill, minmax(390px, 400px));
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
 }
 .boxImg {
   position: relative;
@@ -257,108 +254,7 @@ nav{
   bottom: 28px;
 }
 
-/*      LIQUIDACION        */
-
-.boxAside {
-  display: inline-block;
-
-  text-align: center;
-  border: 4px inset rgba(181, 21, 0, 0.97);
-  height: 850px;
-  width: 300px;
-}
-.gridAside {
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: repeat(8, 80px);
-  grid-row-gap: 15px;
-}
-
-.linkHomeAside {
-  margin-top: 25px;
-  text-decoration: none;
-  color: black;
-  font-family: var(--tipografia-promocion);
-  font-size: 15px;
-  color: black;
-}
-
-.linkHomeAside::after {
-  content: " / resultados de busqueda";
-  color: black;
-  font-size: 15px;
-  font-family: var(--tipografia-promocion);
-}
-
-.opAside {
-  font-family: var(--tipografia-promocion);
-  color: black;
-  font-size: 17px;
-  text-align: center;
-  margin: 0px 5px;
-  height: 45px;
-}
-
-.boxTipoProducto {
-  margin-top: -10px;
-}
-
-.titulosAside {
-  margin-top: 15px;
-  font-family: var(--tipografia-promocion);
-  color: black;
-  font-size: 19px;
-  text-align: center;
-}
-
-.cateTipoProducto {
-  font-family: var(--tipografia-promocion);
-}
-
-.eliminarFiltros {
-  position: relative;
-  top: 105px;
-  color: red;
-}
-
-.btneliminarFiltros {
-  height: 15px;
-  width: 5px;
-}
-
-.btn {
-  height: 15px;
-  width: 5px;
-}
-
-.generoAside {
-  position: relative;
-  top: 110px;
-}
-
-.categoriaAside {
-  position: relative;
-  top: 220px;
-}
-
-.categoriasMain {
-  display: inline-block;
-  position: absolute;
-  width: 155vh;
-  left: 50vh;
-  margin: 25px;
-}
-
-.boxShopDom {
-  display: grid;
-  grid-template-columns: repeat(3, 320px);
-  grid-template-rows: repeat(auto-fill, minmax(390px, 400px));
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
-}
-
 .boxShopImg {
- 
   position: relative;
   left: 40px;
   width: 200px;
@@ -425,5 +321,96 @@ nav{
   position: relative;
   top: 1px;
 }
-
-
+/*******************************************************************************/
+/*******************************************************************************/
+.boxAside {
+  display: grid;
+  grid-template-columns: 190px;
+  grid-template-rows: repeat(auto-fill, minmax(min-content, max-content));
+  text-align: center;
+  justify-items: center;
+  align-content: start;
+  border: 4px inset rgba(181, 21, 0, 0.97);
+  height: auto;
+  width: 200px;
+}
+.boxAside a {
+  margin: 20px 0px 10px 0px;
+  text-decoration: none;
+  color: black;
+  font-family: var(--tipografia-promocion);
+  font-size: 15px;
+}
+.boxAside a::after {
+  content: " resultados de busqueda";
+  color: black;
+  font-size: 15px;
+  font-family: var(--tipografia-promocion);
+}
+.opAside {
+  font-family: var(--tipografia-promocion);
+  color: black;
+  font-size: 17px;
+  text-align: center;
+  width: 80%;
+  margin: 0px 2px;
+  height: 45px;
+}
+.boxFiltros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.boxFiltros h4{
+  margin-top: 15px;
+  font-family: var(--tipografia-promocion);
+  color: black;
+  font-size: 19px;
+  text-align: center;
+}
+.boxFiltros div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.boxFiltros div p {
+  font-family: var(--tipografia-promocion);
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+.boxFiltros div button {
+  height: 15px;
+  width: 20px;
+  border-radius: 28px;
+}
+.boxFiltros div button:hover {
+  background-color: #5cbf2a;
+}
+.btnDeleteFilter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  width: 90%; 
+  padding: 10px 0px;
+}
+.btnDeleteFilter p{
+  font-family: var(--tipografia-promocion);
+  color: rgb(248, 20, 20);
+  font-size: 15px;
+  text-align: center;
+}
+.btnDeleteFilter button{
+  height: 15px;
+  width: 20px;
+  border-radius: 28px;
+}
+.btnDeleteFilter button:hover {
+  background-color: #f61010;
+}

@@ -58,61 +58,72 @@
 		<div class="cuotasHeader">
 		  <p>6</p>
 		</div>
-	  </header>
+	</header>
 
-		<main class="categoriasMain">
+	<main class="categoriasMain">
+		<div id="cajaProducto" class="boxShopDom"></div>
+	</main>
+	
+	<aside class="boxAside">
+			<a href="index.html"><h4>Home</h4></a>
 
-		<div id="cajaProducto" class="boxShopDom">
-			
-		</div>
-			
+			<select class="opAside" >
+  			<option selected>Mas relevantes</option>
+  			<option value="1">Mas vendidos</option>
+  			<option value="2">lanzamiento</option>
+  			<option value="3">precio mas bajo</option>	
+  			<option value="4">precio mas alto</option>
+			</select>
 
-		</main>
-
-		<div class="boxAside">
-
-				<div class="gridAside"> 
-
-					<a class="linkHomeAside" href="index.html">Home</a>
-
-					<select class="opAside" >
-  					<option selected>Mas relevantes</option>
-  					<option value="1">Mas vendidos</option>
-  					<option value="2">lanzamiento</option>
-  					<option value="3">precio mas bajo</option>	
-  					<option value="4">precio mas alto</option>
-					</select>
-
-					<div class="boxTipoProducto">
-					<h4 class="titulosAside">Tipo de productos</h4>
-					<p class="cateTipoProducto">Zapatillas   <button type="button" class="btn tipoProducto" id="zapatillasBTN"></button> </p>
-					<p class="cateTipoProducto">Remeras   <button type="button" class="btn tipoProducto" id="remerasBTN"></button> </p>
-					<p class="cateTipoProducto">Pantalones   <button type="button" class="btn tipoProducto"id="pantalonesBTN"></button> </p>
-					<p class="cateTipoProducto">Botines   <button type="button" class="btn tipoProducto" id="botinesBTN"></button> </p>
-
-					</div>
-
-					<div class="generoAside">
-					<h4 class="titulosAside">Genero</h4>
-					<p class="cateTipoProducto">Masculino   <button type="button" class="btn tipoProducto" id="masculinoBTN"></button> </p>
-					<p class="cateTipoProducto">Femenino   <button type="button" class="btn tipoProducto" id="femeninoBTN"></button> </p>
-					<p class="cateTipoProducto">Niños   <button type="button" class="btn tipoProducto" id="niñosBTN"></button> </p>
-					<p class="cateTipoProducto">Unisex  <button type="button" class="btn tipoProducto" id="unisexBTN"></button> </p>
-					</div>
-
-					<div class="categoriaAside">
-						<h4 class="titulosAside">Categoria</h4>
-					<p class="cateTipoProducto">Moda   <button type="button" class="btn tipoProducto" id="modaBTN"></button> </p>
-					<p class="cateTipoProducto">Futbol  <button type="button" class="btn tipoProducto" id="futbolBTN"></button> </p>
-					<p class="cateTipoProducto">Running  <button type="button" class="btn tipoProducto" id="runningBTN"></button> </p>
-					<p class="cateTipoProducto">Yoga  <button type="button" class="btn tipoProducto" id="yogaBTN"></button> </p>
-					</div>
-					<div class="categoriaAside">
-						
-					<p class="eliminarFiltros">Eliminar Filtros  <button type="button" class="btneliminarFiltros" id="eliminarBTN"></button> </p>
-					
-					</div>
+			<section class="boxFiltros">
+			  <h4>Tipo de productos</h4>
+			  <div>
+				<p>Remeras</p><button type="button" id="remerasBTN"></button>
+			  </div>
+			  <div>
+				<p>Zapatillas</p><button type="button" id="zapatillasBTN"></button> 
+			  </div>
+			  <div>
+				<p>Pantalones</p><button type="button"id="pantalonesBTN"></button>
+			  </div>
+			  <div>
+				<p>Botines</p><button type="button" id="botinesBTN"></button>
+			  </div>
+            </section>
+			<section class="boxFiltros">
+				<h4>Genero</h4>
+				<div>
+				 	<p>Masculino</p><button type="button" id="masculinoBTN"></button>
 				</div>
+				<div>
+					<p>Femenino</p><button type="button" id="femeninoBTN"></button>
+				</div>
+				<div>
+					<p>Niños</p><button type="button" id="niñosBTN"></button> 
+				</div>
+				<div>
+					<p>Unisex</p><button type="button" id="unisexBTN"></button>
+				</div>
+			</section>
+			<section class="boxFiltros">
+				<h4>Categoria</h4>
+				<div>
+					<p>Moda</p><button type="button" id="modaBTN"></button>
+				</div>
+				<div>
+					<p>Futbol</p><button type="button" id="futbolBTN"></button>
+				</div>
+				<div>
+					<p>Running</p><button type="button" id="runningBTN"></button>
+				</div>
+				<div>
+					<p>Yoga</p><button type="button" id="yogaBTN"></button>
+				</div>
+			</section>
+			<section class="btnDeleteFilter">
+				<p>Eliminar Filtros</p><button type="button" id="eliminarBTN"></button> 
+			</section>
+    </aside>
 
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="./Script/categorias.js"></script>
