@@ -196,14 +196,15 @@ nav{
   object-fit: cover;
 }
 .categoriasMain {
-  display: inline-block;
-  position: absolute;
-  height: auto;
-  width: 180vh;
-  left: 35vh;
+  display: flex;
+	flex-direction: row; 
   padding: 0px 0px 10px 0px;
+  justify-content: space-between;
 }
 .boxShopDom {
+  flex-basis: 300px;
+	flex-grow: 2;
+	flex-shrink: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto-fill, minmax(260px, 340px));
