@@ -195,111 +195,67 @@ nav{
   height: 100%;
   object-fit: cover;
 }
-
-
-/*******************************************************************************/
 .categoriasMain {
-  border: 1px solid black;
   display: inline-block;
   position: absolute;
+  height: auto;
   width: 180vh;
   left: 35vh;
+  padding: 0px 0px 10px 0px;
 }
 .boxShopDom {
   display: grid;
-  grid-template-columns: repeat(3, 320px);
-  grid-template-rows: repeat(auto-fill, minmax(390px, 400px));
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(260px, 340px));
+  justify-items: center;
+  gap: 10px;
 }
-.boxImg {
+.artProduct{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
-  top: 15px;
-  left: 11px;
-  height: 200px;
-  width: 280px;
-  border: 4px solid black;
+  width: 300px;
+  height: 335px;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 15px 0 var(--color-principal);
+  border-radius: 5px;
+  overflow: hidden;
 }
-.boxImg img {
-  height: 100%;
+.artProduct figure{
   width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin: 0px;
+}
+.artProduct figure img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.productoNombre {
+.artProduct h4{
   font-family: var(--tipografia-principal);
+  font-size: 20px;
+  padding: 5px 0px;
 }
-.productoDetalle {
-  position: relative;
+.artProduct p{
   font-family: var(--tipografia-promocion);
-  font-size: 17px;
-  bottom: 10px;
-}
-.productoPrecio::before {
-  content: "$ ";
-  font-family: var(--tipografia-principal);
-  font-size: 17px;
-}
-.productoPrecio {
-  position: relative;
-  font-family: var(--tipografia-principal);
-  color: white;
-  font-size: 17px;
-  bottom: 20px;
-}
-
-.productoButton {
-  position: relative;
-  font-family: var(--tipografia-promocion);
-  font-size: 17px;
-  bottom: 28px;
-}
-
-.boxShopImg {
-  position: relative;
-  left: 40px;
-  width: 200px;
-  height: 200px;
-}
-.shopImg {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.shopNombre {
-  position: relative;
-  top: 210px;
-  right: 613px;
-  width: 200px;
-  height: 15px;
-  font-family: var(--tipografia-principal);
-}
-.shopDetalle {
   text-align: center;
-  position: relative;
-  top: -155px;
-  left: 40px;
-  width: 200px;
-  height: 15px;
-  font-family: var(--tipografia-promocion);
+  font-size: 15px;
+  padding: 5px 5px;
 }
-.shopPrecio {
-  position: relative;
-  top: -100px;
-  right: 265px;
-  color: black;
-  width: 150px;
-  height: 15px;
+.artProduct div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 5px 0px;
 }
-.shopButton {
-  position: relative;
-  top: -50px;
-  right: 590px;
-  color: black;
-  width: 150px;
-  height: 15px;
-}
-
-.agregarBTN {
+.artProduct button{
   background-color: #44c767;
   border-radius: 28px;
   border: 1px solid #18ab29;
@@ -313,16 +269,9 @@ nav{
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
 }
-
-.agregarBTN:hover {
+.artProduct button:hover {
   background-color: #5cbf2a;
 }
-.agregarBTN:active {
-  position: relative;
-  top: 1px;
-}
-/*******************************************************************************/
-/*******************************************************************************/
 .boxAside {
   display: grid;
   grid-template-columns: 190px;
@@ -333,6 +282,7 @@ nav{
   border: 4px inset rgba(181, 21, 0, 0.97);
   height: auto;
   width: 200px;
+  margin: 0px 0px 0px 2px;
 }
 .boxAside a {
   margin: 20px 0px 10px 0px;

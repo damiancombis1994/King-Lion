@@ -64,9 +64,24 @@ function propagandaProvincia(){
   descuentosMove();
   propagandaProvincia();
 
-
+/*
   
-
+  fetch("./Data/post.json")
+   .then((res) => res.json())
+   .then((data)=>{
+          data.forEach((post) => {
+               const comentarioLive = document.getElementById("comentariosLive")
+               const div = document.createElement("div")
+               div.innerHTML = `<div class="cajaComentarioLive">
+ 		<h6 class="comentarioH6">${post.email}</h6>
+               <p class="postComentario">${post.comentario}</p>
+               </div>
+               `;
+               comentarioLive.append(div)
+          });
+   });
+   
+*/ 
 
 
 
