@@ -237,7 +237,7 @@ nav{
 .artProduct h4{
   font-family: var(--tipografia-principal);
   font-size: 20px;
-  padding: 5px 0px;
+  padding: 5px 0px 0px 0px;
 }
 .artProduct p{
   font-family: var(--tipografia-promocion);
